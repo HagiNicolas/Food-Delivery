@@ -1,11 +1,10 @@
 using AutoMapper;
 using FluentValidation;
-using FoodDeliveryServer.Data.Contexts;
-using FoodDeliveryServer.Data.Interfaces;
-using FoodDeliveryServer.Core.Mapping;
-using FoodDeliveryServer.Data.Models;
-using FoodDeliveryServer.Data.Repositories;
-using FoodDeliveryServer.Core.Validators;
+using FoodDelivery.Data.Contexts;
+using FoodDelivery.Data.Interfaces;
+using FoodDelivery.Data.Models;
+using FoodDelivery.Data.Repositories;
+using FoodDelivery.Core.Validators;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -17,9 +16,9 @@ using Customer = FoodDeliveryServer.Data.Models.Customer;
 using CustomerService = FoodDeliveryServer.Core.Services.CustomerService;
 using Product = FoodDeliveryServer.Data.Models.Product;
 using ProductService = FoodDeliveryServer.Core.Services.ProductService;
-using FoodDeliveryServer.Core.Interfaces;
-using FoodDeliveryServer.Core.Services;
-using FoodDeliveryServer.Api.Middleware;
+using FoodDelivery.Core.Interfaces;
+using FoodDelivery.Core.Services;
+using FoodDelivery.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
